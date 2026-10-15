@@ -1,0 +1,13 @@
+{
+  "name": "shelfloop",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Food rescue planner for Arbiter Hacks V1",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test",
+    "build:pages": "node scripts/build-pages.js"
+  },
+  "engines": { "node": ">=20" }
+}
