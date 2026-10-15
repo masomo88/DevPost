@@ -39,7 +39,7 @@ Node HTTP server: static files, 80 KB request limit, JSON API (including /api/pl
 
 ## Static demo
 
-Run `npm run build:pages` to copy the browser app into `docs/`. A public GitHub repository can serve `docs/` with GitHub Pages at no software cost. The inventory planner and outcome journal work there without a backend. Local Ollama suggestions are available only when running the Node server with a local model.
+Run `npm run build:pages` to copy the browser app into `docs/`. The [public demo](https://masomo88.github.io/DevPost/) is served from the [repository's](https://github.com/masomo88/DevPost) `docs/` folder with GitHub Pages at no software cost. The inventory planner and outcome journal work there without a backend. Local Ollama suggestions are available only when running the Node server with a local model.
 
 ## Privacy, safety and accessibility
 
@@ -54,7 +54,7 @@ The dashboard's “food needing a plan” is the entered mass of items dated wit
 
 ## Submission status
 
-The code and write-up are local and tested. A public repository URL, externally hosted demo, and a 2–3 minute video do not exist yet. The published Arbiter requirements call for a public repository and demo video; see [SUBMISSION.md](SUBMISSION.md) and [DEMO_SCRIPT.md](DEMO_SCRIPT.md). No registration or submission has been made.
+The [public repository](https://github.com/masomo88/DevPost) contains the code and write-up. The [GitHub Pages demo](https://masomo88.github.io/DevPost/) has been verified in a browser. A 2–3 minute video does not exist yet. The published Arbiter requirements call for a public repository and demo video; see [SUBMISSION.md](SUBMISSION.md) and [DEMO_SCRIPT.md](DEMO_SCRIPT.md). No registration or submission has been made.
 
 ## License
 

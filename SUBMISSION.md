@@ -36,7 +36,8 @@ ShelfLoop targets **avoidable household food waste caused by forgotten ingredien
 - [ ] Confirm with organizer whether code created before 20 October is eligible; disclose the 15 October prototype
 - [ ] Confirm AI coding-assistant policy and any fee or minor-specific condition; question drafted in `ORGANIZER_MESSAGE.md`
 - [ ] Build and log substantive event-period work if required
-- [ ] Publish a public repository with this source and license (authorized; in progress)
+- [x] Publish a public repository with this source and license: https://github.com/masomo88/DevPost
+- [x] Verify the GitHub Pages demo is live: https://masomo88.github.io/DevPost/
 - [ ] Record and publish the 2–3 minute video (requires user participation/authorization)
 - [ ] Register and submit on Devpost (requires explicit user authorization)
 
