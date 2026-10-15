@@ -49,6 +49,11 @@ async function aiSuggestions(items, today) {
     }).filter(Boolean);
     if (!suggestions.length) throw Object.assign(new Error('The local model did not return an idea grounded in your inventory. Try again.'), { status: 502 });
     return { suggestions, model, provider: 'local Ollama' };
+  } catch (error) {
+    if (error.status) throw error;
+    if (error.name === 'AbortError') throw Object.assign(new Error('Local AI timed out. Try again after the model is ready.'), { status: 504 });
+    if (error instanceof TypeError) throw Object.assign(new Error('Cannot reach local Ollama. Start it and try again.'), { status: 503 });
+    throw Object.assign(new Error('The local model returned an unusable response. Try again.'), { status: 502 });
   } finally { clearTimeout(timer); }
 }
 
