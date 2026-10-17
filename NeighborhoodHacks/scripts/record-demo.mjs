@@ -5,7 +5,8 @@ import { fileURLToPath } from 'node:url';
 const { chromium } = await import(process.env.PLAYWRIGHT_ENTRY || 'playwright');
 const chrome = process.env.CHROME_PATH || 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe';
 const outputDir = fileURLToPath(new URL('../assets/', import.meta.url));
-const publicDir = fileURLToPath(new URL('../../docs/repair-relay/', import.meta.url));
+const parentPages = process.argv.includes('--parent-pages');
+const publicDir = fileURLToPath(new URL(parentPages ? '../../docs/repair-relay/' : '../docs/', import.meta.url));
 await mkdir(outputDir, { recursive: true });
 await mkdir(publicDir, { recursive: true });
 
@@ -79,7 +80,7 @@ try {
   await context.close();
   const recorded = await page.video().path();
   const localTarget = fileURLToPath(new URL('../assets/repair-relay-demo.webm', import.meta.url));
-  const publicTarget = fileURLToPath(new URL('../../docs/repair-relay/demo.webm', import.meta.url));
+  const publicTarget = fileURLToPath(new URL(parentPages ? '../../docs/repair-relay/demo.webm' : '../docs/demo.webm', import.meta.url));
   await copyFile(recorded, localTarget);
   await copyFile(recorded, publicTarget);
   console.log('Saved ' + localTarget);
@@ -88,4 +89,5 @@ try {
   if (browser) await browser.close();
   await new Promise(resolve => server.close(resolve));
 }
+
 

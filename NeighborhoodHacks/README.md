@@ -27,7 +27,7 @@ Requires Node.js 20 or newer. No package install, API key, account, or paid serv
     npm test
     npm run build
 
-Visit http://127.0.0.1:3000 after starting. The build command copies the static browser app into the parent repository at docs/repair-relay for GitHub Pages. POST /api/schedule accepts an exported board JSON and returns the plan. The browser uses the same engine locally, so static hosting needs no server.
+Visit http://127.0.0.1:3000 after starting. The build command copies the static browser app into this project's docs folder. In the original multi-project repository, use npm run build -- --parent-pages to refresh its shared GitHub Pages directory. POST /api/schedule accepts an exported board JSON and returns the plan. The browser uses the same engine locally, so static hosting needs no server.
 
 ## Architecture
 
@@ -62,4 +62,5 @@ Public demo: https://masomo88.github.io/DevPost/repair-relay/
 
 Captioned 2:21 demo video: https://masomo88.github.io/DevPost/repair-relay/video.html
 Devpost requires the final video-field URL to be on YouTube, Vimeo, or Youku; the Pages-hosted WebM is a review copy: https://help.devpost.com/article/85-uploading-a-demo-video
+
 
