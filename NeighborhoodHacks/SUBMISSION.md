@@ -32,14 +32,14 @@ Pilot with a real neighbourhood group, improve skill and station modelling, and 
 
 ## Before submission
 
-- Record a 2–6 minute screen capture of the working app.
+- Review the existing 2:21 screen capture and add a truthful spoken explanation if the organisers require one.
 - Live demo: https://masomo88.github.io/DevPost/repair-relay/
-- Public source: https://github.com/masomo88/DevPost/tree/main/NeighborhoodHacks
+- Public source: https://github.com/masomo88/RepairRelay-NeighborhoodHacks-2026
 - Check the official detailed challenge prompt when published.
 - Have the entrant review the AI disclosure and final application.
 
 AI authorship note: Codex generated substantial code and text. The entrant must review, understand, and make their own meaningful contribution before claiming the work meets the FAQ expectation that it is primarily theirs. Do not claim interviews, pilot use, or personal observations that have not occurred.
 
 
-A 2:21 captioned screen recording exists at https://masomo88.github.io/DevPost/repair-relay/video.html . Devpost does not accept a GitHub Pages WebM in its video field; upload the video to YouTube, Vimeo, or Youku and use that shareable URL. See https://help.devpost.com/article/85-uploading-a-demo-video .
+A 2:21 captioned screen recording exists at https://masomo88.github.io/DevPost/repair-relay/video.html . Devpost does not accept a GitHub Pages WebM in its video field; use the shareable YouTube URL once uploaded. See https://help.devpost.com/article/85-uploading-a-demo-video .
 
