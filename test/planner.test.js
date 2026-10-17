@@ -65,7 +65,7 @@ test('local AI integration parses Ollama JSON contract', async t => {
   t.after(() => { mock.close(); server.close(); delete process.env.OLLAMA_MODEL; delete process.env.OLLAMA_PORT; });
   process.env.OLLAMA_MODEL = 'test-local-model';
   process.env.OLLAMA_PORT = String(mock.address().port);
-  const response = await fetch(`http://127.0.0.1:${server.address().port}/api/ai-plan`, { method: 'POST', body: JSON.stringify({ items: pantry }) });
+  const response = await fetch(`http://127.0.0.1:${server.address().port}/api/ai-plan`, { method: 'POST', body: JSON.stringify({ items: pantry, today: '2026-10-15' }) });
   assert.equal(response.status, 200);
   const result = await response.json();
   assert.equal(result.provider, 'local Ollama');

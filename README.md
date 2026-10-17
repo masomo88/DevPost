@@ -54,7 +54,7 @@ The dashboard's “food needing a plan” is the entered mass of items dated wit
 
 ## Submission status
 
-The [public repository](https://github.com/masomo88/DevPost) contains the code and write-up. The [GitHub Pages demo](https://masomo88.github.io/DevPost/) has been verified in a browser. A 2–3 minute video does not exist yet. The published Arbiter requirements call for a public repository and demo video; see [SUBMISSION.md](SUBMISSION.md) and [DEMO_SCRIPT.md](DEMO_SCRIPT.md). No registration or submission has been made.
+The [public repository](https://github.com/masomo88/DevPost) contains the code and write-up. The [GitHub Pages demo](https://masomo88.github.io/DevPost/) has been verified in a browser. A 2–3 minute video does not exist yet. The published Arbiter requirements call for a public repository and demo video; see [SUBMISSION.md](SUBMISSION.md), [DEMO_SCRIPT.md](DEMO_SCRIPT.md), and [RECORDING_GUIDE.md](RECORDING_GUIDE.md). No registration or submission has been made.
 
 ## License
 

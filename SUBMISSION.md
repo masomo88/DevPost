@@ -33,12 +33,13 @@ ShelfLoop targets **avoidable household food waste caused by forgotten ingredien
 - [x] Working local application and source code
 - [x] Written description and theme measurement paragraph
 - [x] Automated tests, simulated Ollama contract test, and manual browser interaction check
-- [ ] Confirm with organizer whether code created before 20 October is eligible; disclose the 15 October prototype
-- [ ] Confirm AI coding-assistant policy and any fee or minor-specific condition; question drafted in `ORGANIZER_MESSAGE.md`
+- [ ] Await organizer answer on pre-event code; the 15 October prototype must be disclosed
+- [x] Ask about pre-event code, Codex, fees and minor eligibility in the [official forum](https://arbiter-hacks-v1.devpost.com/forum_topics/45578-arbiter-v1-pre-event-prototype-ai-tools-and-minor-eligibility)
+- [ ] Await the organizer answer on Codex, fees and minor-specific conditions
 - [ ] Build and log substantive event-period work if required
 - [x] Publish a public repository with this source and license: https://github.com/masomo88/DevPost
 - [x] Verify the GitHub Pages demo is live: https://masomo88.github.io/DevPost/
-- [ ] Record and publish the 2–3 minute video (requires user participation/authorization)
+- [ ] Record and publish the 2–3 minute video using DEMO_SCRIPT.md and RECORDING_GUIDE.md
 - [ ] Register and submit on Devpost (requires explicit user authorization)
 
 The [Arbiter overview](https://arbiter-hacks-v1.devpost.com/) requires a public repository, a demo video of 2–3 minutes maximum, a description, and the theme paragraph; its [rules](https://arbiter-hacks-v1.devpost.com/rules) specify solo/team size and the judging rubric. The public page labels the first theme prize “$1,100 in cash”, but its breakdown says **$100 cash and $1,000 Adaption credits**. No award is guaranteed.
