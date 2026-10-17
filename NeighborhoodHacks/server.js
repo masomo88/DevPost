@@ -6,7 +6,7 @@ import { makeSchedule } from './public/core.js';
 
 const root = resolve(fileURLToPath(new URL('./public/', import.meta.url)));
 const types = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.svg': 'image/svg+xml' };
-const paths = new Set(['/','/index.html','/app.js','/core.js','/styles.css']);
+const paths = new Set(['/','/index.html','/video.html','/app.js','/core.js','/styles.css']);
 
 export function createApp() {
   return createServer(async (request, response) => {
@@ -24,6 +24,17 @@ export function createApp() {
       } catch (error) {
         response.writeHead(400, { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' });
         response.end(JSON.stringify({ error: error instanceof Error ? error.message : 'Invalid board.' }));
+      }
+      return;
+    }
+    if (request.method === 'GET' && url.pathname === '/demo.webm') {
+      try {
+        const video = await readFile(fileURLToPath(new URL('./assets/repair-relay-demo.webm', import.meta.url)));
+        response.writeHead(200, { 'content-type': 'video/webm', 'content-length': video.length, 'x-content-type-options': 'nosniff' });
+        response.end(video);
+      } catch {
+        response.writeHead(404);
+        response.end('Not found');
       }
       return;
     }
@@ -53,3 +64,4 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === resolve(process.argv[1
   const port = Number(process.env.PORT || 3000);
   createApp().listen(port, '127.0.0.1', () => console.log('Repair Relay: http://127.0.0.1:' + port));
 }
+

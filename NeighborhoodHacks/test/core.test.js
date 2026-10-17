@@ -75,10 +75,18 @@ test('HTTP API returns a schedule and reports invalid input', async () => {
     const bad = await fetch(url, { method: 'POST', body: '{"bad":true}' });
     assert.equal(bad.status, 400);
     assert.match((await bad.json()).error, /Start time/);
+    const videoPage = await fetch(url.replace('/api/schedule', '/video.html'));
+    assert.equal(videoPage.status, 200);
+    assert.match(await videoPage.text(), /Repair Relay demo video/);
+    const video = await fetch(url.replace('/api/schedule', '/demo.webm'));
+    assert.equal(video.status, 200);
+    assert.match(video.headers.get('content-type'), /video\/webm/);
+    await video.arrayBuffer();
     const unknown = await fetch(url.replace('/api/schedule', '/private.txt'));
     assert.equal(unknown.status, 404);
   } finally {
     await new Promise(resolve => server.close(resolve));
   }
 });
+
 

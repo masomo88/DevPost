@@ -59,3 +59,7 @@ The heuristic does not model breaks, stations, or safety qualifications. A real 
 Public demo: https://masomo88.github.io/DevPost/repair-relay/
 
 
+
+Captioned 2:21 demo video: https://masomo88.github.io/DevPost/repair-relay/video.html
+Devpost requires the final video-field URL to be on YouTube, Vimeo, or Youku; the Pages-hosted WebM is a review copy: https://help.devpost.com/article/85-uploading-a-demo-video
+

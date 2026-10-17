@@ -1,6 +1,6 @@
 # Repair Relay video script
 
-Target: approximately 3 minutes 20 seconds. Record the real app, not a mockup. No video has been recorded yet.
+A captioned screen recording of the real app was completed on 17 October 2026 (2:21, 1280×720). It uses fictional data and contains no narration audio. The longer script below can guide an optional voice-over version.
 
 | Time | Screen | Narration |
 | --- | --- | --- |
@@ -14,3 +14,4 @@ Target: approximately 3 minutes 20 seconds. Record the real app, not a mockup. N
 | 3:05–3:20 | Source code and closing | The source uses a transparent matching heuristic and optional Node endpoint. Codex helped build and test the project during the hackathon. |
 
 Capture at 1280×720 or higher. Load the fictional example, keep sample labels visible, and ensure text is legible. Add captions if possible. Do not show personal contact details.
+
