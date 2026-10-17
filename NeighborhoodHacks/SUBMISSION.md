@@ -16,7 +16,7 @@ The official kickoff prompt asks for a problem personally seen in the entrant's 
 
 ## What it does
 
-Organisers create a repair day, add requests and volunteer skills, and receive a time-based schedule. Unmatched requests appear on a waitlist. Safety-flagged cases are held for qualified review. Organisers can record outcomes, print a plan, or export/import JSON. A labelled fictional example makes the flow easy to inspect.
+Organisers create a repair day, add requests and volunteer skills, and receive a time-based schedule. Unmatched requests appear on a waitlist that explains whether a matching skill or a free time slot is missing. Safety-flagged cases are held for qualified review. Organisers can record outcomes, print a plan, or export/import JSON. A labelled fictional example makes the flow easy to inspect.
 
 ## How it was built
 
@@ -48,3 +48,5 @@ AI authorship note: Codex generated substantial code and text. The entrant must 
 
 
 A 2:21 captioned screen recording exists at https://masomo88.github.io/RepairRelay-NeighborhoodHacks-2026/video.html . Devpost accepts the unlisted YouTube link above in its video field. The GitHub Pages WebM remains a review copy. See https://help.devpost.com/article/85-uploading-a-demo-video .
+
+On 17 October, we [asked the organisers publicly](https://neighborhood-hacks-2026.devpost.com/forum_topics/45580-clarification-on-ai-assistance-and-primarily-your-own-work) whether this workflow satisfies the FAQ's 'primarily your own' requirement. The question discloses Codex's substantial role. There was no reply when this draft was updated; eligibility on that point remains unresolved.
